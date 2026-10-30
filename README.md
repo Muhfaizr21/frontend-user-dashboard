@@ -42,6 +42,8 @@ Project ini dibangun menggunakan **React 19**, **Vite**, **TypeScript**, dan **T
 
 ## 3. Cara Menjalankan Project di Lokal
 
+### Cara A: Manual (Node.js)
+
 Pastikan **Node.js** (versi 18 ke atas) telah terpasang di komputer Anda:
 
 ```bash
@@ -60,6 +62,28 @@ npm run test
 
 # 5. Build untuk production
 npm run build
+```
+
+### Cara B: Docker
+
+Pastikan **Docker** dan **Docker Compose** telah terpasang di komputer Anda:
+
+```bash
+# 1. Clone repository
+git clone https://github.com/Muhfaizr21/frontend-user-dashboard.git
+cd frontend-user-dashboard
+
+# 2. Build & jalankan container
+docker compose up -d
+
+# 3. Akses aplikasi di browser
+#    http://localhost:5173
+
+# 4. (Opsional) Lihat log container
+docker compose logs -f
+
+# 5. Hentakan container
+docker compose down
 ```
 
 ---
